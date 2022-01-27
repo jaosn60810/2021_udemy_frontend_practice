@@ -173,11 +173,24 @@ main .second .cards .card {
           flex: 1 1 300px;
 }
 
-main .second .cards .card img {
-  margin: 1rem 0;
+main .second .cards .card .img-container {
+  overflow: hidden;
   width: 15vw;
   height: 15vw;
   border-radius: 50%;
+}
+
+main .second .cards .card .img-container img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+main .second .cards .card .img-container img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 main .second .cards .card h4 {
