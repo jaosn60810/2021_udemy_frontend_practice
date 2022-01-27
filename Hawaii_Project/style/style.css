@@ -266,6 +266,21 @@ footer .links a img {
   height: 5vw;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #09777d;
+}
+
 @media screen and (max-width: 700px) {
   main .second .cards .card img {
     width: 40vw;
