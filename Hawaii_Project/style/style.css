@@ -24,6 +24,13 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 5px 1px #6b6b6b;
+          box-shadow: 3px 3px 5px 1px #6b6b6b;
 }
 
 header .logo {
