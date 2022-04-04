@@ -69,6 +69,44 @@ main {
       transform: translateY(-50%);
     }
   }
+
+  section.table {
+    flex: 3 1 500px;
+    padding: 2rem;
+
+    table {
+      border-collapse: collapse;
+      tr {
+        border-bottom: 2px solid gray;
+        transition: all 0.2s ease;
+        td {
+          padding: 1rem;
+        }
+        &:hover {
+          background-color: #ffd2b8;
+        }
+      }
+    }
+  }
+
+  section.picture {
+    flex: 1 1 600px;
+    position: relative;
+    img {
+      width: 30vw;
+      object-fit: cover;
+    }
+
+    .orangeRect {
+      width: 30vw;
+      height: 90vh;
+      background-color: #e08958;
+      position: absolute;
+      top: 30px;
+      left: 80px;
+      z-index: -1;
+    }
+  }
 }
 
 footer {
@@ -110,6 +148,17 @@ footer {
         transform: none;
         width: 50vw;
         height: 50vw;
+      }
+    }
+    section.picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 60vw;
+      }
+      .orangeRect {
+        display: none;
       }
     }
   }
