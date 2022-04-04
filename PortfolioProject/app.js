@@ -1,5 +1,8 @@
 const text = document.querySelectorAll('.thePaths');
 
-for (let i = 0; i < text.length; i++) {
-  console.log(`test`);
-}
+const lastWord = document.querySelector('#sixteenth');
+const animation = document.querySelector('.animation');
+lastWord.addEventListener('animationend', () => {
+  animation.style =
+    'transition: all 1s ease; opacity: 0;  pointer-events: none;';
+});
