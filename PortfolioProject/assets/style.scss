@@ -107,6 +107,65 @@ main {
       z-index: -1;
     }
   }
+
+  section.form {
+    flex: 1 1 600px;
+    form {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 1.5rem;
+
+      div {
+        margin: 0.5rem;
+        label {
+          font-size: 1.5rem;
+          margin-right: 1rem;
+        }
+        input,
+        textarea {
+          background-color: #ffaa79;
+          color: white;
+          font-size: 1.25rem;
+          padding: 0.5rem 0.25rem;
+          border: none;
+          width: 90%;
+        }
+        textarea {
+          vertical-align: top;
+        }
+      }
+      button {
+        align-self: center;
+        background-color: #e08958;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 0.75rem 1.5rem;
+        font-size: 2rem;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .line {
+    background-color: gray;
+    width: 3px;
+  }
+
+  section.contact {
+    flex: 1 1 500px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+
+    .content {
+      h2 {
+        margin: 1rem 0rem;
+      }
+    }
+  }
 }
 
 footer {
