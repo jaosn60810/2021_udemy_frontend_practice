@@ -24,7 +24,6 @@ add.addEventListener('click', (e) => {
   completeButton.classList.add('complete');
   completeButton.innerHTML = `<i class="fa-solid fa-check"></i>`;
   completeButton.addEventListener('click', (e) => {
-    e.preventDefault();
     const todoItem = e.target.parentElement;
     todoItem.classList.toggle('done');
   });
@@ -32,6 +31,15 @@ add.addEventListener('click', (e) => {
   const trashButton = document.createElement('button');
   trashButton.classList.add('trash');
   trashButton.innerHTML = `<i class="fa-solid fa-trash"></i>`;
+  trashButton.addEventListener('click', (e) => {
+    const todoItem = e.target.parentElement;
+
+    todoItem.addEventListener('animationend', (e) => {
+      todoItem.remove();
+    });
+
+    todoItem.style.animation = 'scaleDown 0.3s forwards';
+  });
 
   todo.appendChild(completeButton);
   todo.appendChild(trashButton);
