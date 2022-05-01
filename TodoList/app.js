@@ -9,6 +9,11 @@ add.addEventListener('click', (e) => {
   const todoMonth = form.children[1].value;
   const todoDate = form.children[2].value;
 
+  if (todoText === '') {
+    alert('Please enter sone text.');
+    return;
+  }
+
   const todo = document.createElement('div');
   todo.classList.add('todo');
   const text = document.createElement('p');
@@ -45,6 +50,8 @@ add.addEventListener('click', (e) => {
   todo.appendChild(trashButton);
 
   todo.style.animation = 'scaleUp 0.3s forwards';
+
+  form.children[0].value = '';
 
   section.appendChild(todo);
 });
