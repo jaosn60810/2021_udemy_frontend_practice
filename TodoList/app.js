@@ -20,5 +20,23 @@ add.addEventListener('click', (e) => {
   todo.appendChild(text);
   todo.appendChild(time);
 
+  const completeButton = document.createElement('button');
+  completeButton.classList.add('complete');
+  completeButton.innerHTML = `<i class="fa-solid fa-check"></i>`;
+  completeButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const todoItem = e.target.parentElement;
+    todoItem.classList.toggle('done');
+  });
+
+  const trashButton = document.createElement('button');
+  trashButton.classList.add('trash');
+  trashButton.innerHTML = `<i class="fa-solid fa-trash"></i>`;
+
+  todo.appendChild(completeButton);
+  todo.appendChild(trashButton);
+
+  todo.style.animation = 'scaleUp 0.3s forwards';
+
   section.appendChild(todo);
 });
