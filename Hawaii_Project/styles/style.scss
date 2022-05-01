@@ -22,7 +22,7 @@ h6 {
   top: 0;
   z-index: 5;
   background-color: white;
-  box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
+  transition: all 0.5s ease;
 
   .logo {
     display: flex;

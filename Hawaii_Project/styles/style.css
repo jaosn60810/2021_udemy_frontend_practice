@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 h1,
@@ -24,15 +24,13 @@ h6 {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 5;
   background-color: white;
-  -webkit-box-shadow: 3px 3px 5px 1px #6b6b6b;
-          box-shadow: 3px 3px 5px 1px #6b6b6b;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-
 .header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,18 +43,15 @@ h6 {
           flex: 5 1 400px;
   margin-left: 2rem;
 }
-
 .header .logo img {
   width: 6vw;
   height: 6vw;
 }
-
 .header nav {
   -webkit-box-flex: 2;
       -ms-flex: 2 1 400px;
           flex: 2 1 400px;
 }
-
 .header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,7 +60,6 @@ h6 {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-
 .header nav ul li a {
   color: #09777d;
   text-decoration: none;
@@ -95,13 +89,11 @@ main .backImage {
           flex-direction: column;
   text-align: center;
 }
-
 main .backImage h3 {
   font-size: 3.5rem;
   color: white;
   margin: 2rem 0rem;
 }
-
 main .backImage .start {
   background-color: #3bf0e5;
   padding: 0.75rem 1.5rem;
@@ -111,7 +103,6 @@ main .backImage .start {
   border-radius: 1rem;
   cursor: pointer;
 }
-
 main .backImage .filter {
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
@@ -120,7 +111,6 @@ main .backImage .filter {
   top: 0;
   z-index: -1;
 }
-
 main .second {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,16 +124,13 @@ main .second {
           align-items: center;
   text-align: center;
 }
-
 main .second h2 {
   font-size: 2rem;
   margin: 2rem 0;
 }
-
 main .second h2 span {
   color: #12948c;
 }
-
 main .second .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -153,7 +140,6 @@ main .second .cards {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 main .second .cards .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,14 +158,12 @@ main .second .cards .card {
       -ms-flex: 1 1 300px;
           flex: 1 1 300px;
 }
-
 main .second .cards .card .img-container {
   overflow: hidden;
   width: 15vw;
   height: 15vw;
   border-radius: 50%;
 }
-
 main .second .cards .card .img-container img {
   width: 15vw;
   height: 15vw;
@@ -187,21 +171,17 @@ main .second .cards .card .img-container img {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 main .second .cards .card .img-container img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-
 main .second .cards .card h4 {
   font-size: 2rem;
   margin: 1rem 0;
 }
-
 main .second .cards .card p {
   font-size: 1.25rem;
 }
-
 main .second .cards .card a {
   margin: 1rem 0;
   text-decoration: none;
@@ -225,9 +205,8 @@ footer {
   min-height: 40vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #cfcfcf;
+  background-color: rgb(207, 207, 207);
 }
-
 footer .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,16 +215,13 @@ footer .logo {
       -ms-flex-align: center;
           align-items: center;
 }
-
 footer .logo img {
   width: 6vw;
   height: 6vw;
 }
-
 footer nav {
   width: 30%;
 }
-
 footer nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,23 +233,19 @@ footer nav ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 footer nav ul li {
   -ms-flex-preferred-size: 100px;
       flex-basis: 100px;
 }
-
 footer nav ul li a {
   color: black;
   font-weight: 600;
   text-decoration: none;
   font-size: 1.35rem;
 }
-
 footer .links a {
   margin: 0 1rem;
 }
-
 footer .links a img {
   width: 5vw;
   height: 5vw;
@@ -300,7 +272,6 @@ footer .links a img {
     height: 40vw;
   }
 }
-
 @media screen and (max-width: 550px) {
   header .logo {
     margin-left: 0.5rem;
@@ -309,6 +280,7 @@ footer .links a img {
     width: 15vw;
     height: 15vw;
   }
+
   footer .logo img {
     width: 15vw;
     height: 15vw;
